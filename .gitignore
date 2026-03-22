@@ -1,2 +1,19 @@
 public/
 .packages/
+
+# Emacs backup files
+*~
+
+# Emacs autosave files
+#foo#
+.#*
+
+# Org / Emacs temp stuff
+*.elc
+
+# Optional: auto-save list directory
+.auto-save-list/
+
+# Optional: transient / cache dirs
+.tramp/
+.eshell/
