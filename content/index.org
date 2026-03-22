@@ -1,11 +1,11 @@
 #+title: Index
-#+date: [2026-03-22 Sun]
 #+author: rawas94
 #+description: org mode example site
 #+filetags: 
 
 * Overview
 This is an *example* of a _website_ written with [[https://orgmode.org][Org Mode]]!
-Here is a link to my [[./Emacs.org][Emacs configuration]].
+
+Here is a link to System Crafter's  [[./Emacs.org][Emacs configuration]] from back then.
 * Links
 - [[https://twitter.com/AlRawasAbed][AlRawasAbed on Twitter]]
