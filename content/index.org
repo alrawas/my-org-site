@@ -23,7 +23,7 @@ What I'm currently up to:
 
 * Posts
 
-- [[./Emacs.org][Emacs Configuration]] — a deep dive into an Emacs setup
+- [[./Emacs.org][Emacs Configuration]] — a deep dive into an Emacs setup, by System Crafters
 
 * Links
 
