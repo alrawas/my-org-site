@@ -117,6 +117,62 @@
     background: var(--accent);
     color: var(--bg);
   }
+
+  /* CRT scanline overlay */
+  body::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9999;
+    background: repeating-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.03) 0px,
+      rgba(0, 0, 0, 0.03) 1px,
+      transparent 1px,
+      transparent 3px
+    );
+  }
+
+  /* Screen edge vignette */
+  body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 9998;
+    box-shadow: inset 0 0 120px rgba(0, 0, 0, 0.25);
+  }
+
+  /* Subtle screen flicker */
+  @keyframes flicker {
+    0%   { opacity: 0.97; }
+    5%   { opacity: 0.95; }
+    10%  { opacity: 0.98; }
+    15%  { opacity: 0.96; }
+    20%  { opacity: 0.99; }
+    100% { opacity: 0.98; }
+  }
+
+  body {
+    animation: flicker 4s infinite;
+  }
+
+  /* Slight text glow for that phosphor feel */
+  @media (prefers-color-scheme: dark) {
+    body {
+      text-shadow: 0 0 2px rgba(224, 213, 197, 0.15);
+    }
+    header h1 {
+      text-shadow: 0 0 8px rgba(212, 148, 74, 0.3);
+    }
+  }
 </style>
 ")
 
