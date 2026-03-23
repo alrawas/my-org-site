@@ -220,8 +220,8 @@
              :time-stamp-file nil       ;; Don't include time stamp in file
 
              :html-preamble "<nav>
-  <a href=\"/\">Home</a>
-  <a href=\"/sitemap.html\">All Pages</a>
+  <a href=\"/my-org-site/\">Home</a>
+  <a href=\"/my-org-site/sitemap.html\">All Pages</a>
 </nav>"
 
              :html-postamble "<footer>

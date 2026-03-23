@@ -7,7 +7,7 @@
 
 * About
 
-Software engineer with 9+ years of experience across backend systems, infrastructure, and platform engineering. I've built airport systems for DXB, AUH, and SHJ — working with Spring Boot, PostgreSQL, Apache Camel, and Linux.
+Software engineer with 9+ years of experience across backend systems, infrastructure, and platform engineering. I've built airport systems for DXB, AUH, and SHJ, and developed logistics systems backends and package delivery systems — working with Spring Boot, PostgreSQL, Apache Camel, and Linux.
 
 Currently exploring AI — LLMs, agents, and the tooling around them.
 
