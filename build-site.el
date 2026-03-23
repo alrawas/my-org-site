@@ -118,6 +118,35 @@
     color: var(--bg);
   }
 
+  /* Nav bar */
+  nav {
+    display: flex;
+    gap: 1.5em;
+    padding: 0.8em 0;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 1.5em;
+    font-size: 0.9em;
+  }
+
+  nav a {
+    text-decoration: none;
+    opacity: 0.8;
+  }
+
+  nav a:hover {
+    opacity: 1;
+  }
+
+  /* Custom footer */
+  #postamble {
+    border-top: 1px solid var(--border);
+    margin-top: 3em;
+    padding-top: 1em;
+    opacity: 0.5;
+    font-size: 0.8em;
+    text-align: center;
+  }
+
   /* CRT scanline overlay */
   body::after {
     content: '';
@@ -185,10 +214,23 @@
              :publishing-function 'org-html-publish-to-html
              :publishing-directory "./public"
              :with-author nil           ;; Don't include author name
-             :with-creator t            ;; Include Emacs and Org versions in footer
+             :with-creator nil          ;; Don't include default creator info
              :with-toc t                ;; Include a table of contents
              :section-numbers nil       ;; Don't include section numbers
-             :time-stamp-file nil)))    ;; Don't include time stamp in file
+             :time-stamp-file nil       ;; Don't include time stamp in file
+
+             :html-preamble "<nav>
+  <a href=\"/\">Home</a>
+  <a href=\"/sitemap.html\">All Pages</a>
+</nav>"
+
+             :html-postamble "<footer>
+  <p>Built with Emacs &amp; Org Mode</p>
+</footer>"
+
+             :auto-sitemap t
+             :sitemap-title "All Pages"
+             :sitemap-sort-files 'anti-chronologically)))    ;; Newest first
 
 ;; Generate the site output
 (org-publish-all t)
