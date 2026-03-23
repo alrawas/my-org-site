@@ -1,12 +1,33 @@
-#+title: Index
-#+author: rawas94
-#+description: org mode example site
-#+filetags: 
+#+title: AlRawasAbed
+#+author: AbdulRahman ElRawas
+#+description: software engineer — computer, business, thoughts
+#+options: toc:nil
 
-* Overview
-This is an *example* of a _website_ written with [[https://orgmode.org][Org Mode]]!
+> computer · business · thoughts
 
-Here is a link to System Crafter's  [[./Emacs.org][Emacs configuration]] from back then.
+* About
+
+Software engineer with 9+ years of experience across backend systems, infrastructure, and platform engineering. I've built airport systems for DXB, AUH, and SHJ — working with Spring Boot, PostgreSQL, Apache Camel, and Linux.
+
+Currently exploring AI — LLMs, agents, and the tooling around them.
+
+This site is built with [[https://orgmode.org][Org Mode]] and Emacs.
+
+* Now
+
+What I'm currently up to:
+
+- Exploring AI — local models, LLM agents, building with Claude
+- Tinkering with Emacs and Org Mode
+- Writing about things I learn along the way
+
+* Posts
+
+- [[./Emacs.org][Emacs Configuration]] — a deep dive into an Emacs setup
 
 * Links
-- [[https://twitter.com/AlRawasAbed][AlRawasAbed on Twitter]]
+
+- [[https://github.com/alrawas][GitHub]]
+- [[https://www.linkedin.com/in/rawas94][LinkedIn]]
+- [[https://twitter.com/AlRawasAbed][Twitter / X]]
+- [[mailto:alrawas.abed@gmail.com][Email]]
